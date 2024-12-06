@@ -14,7 +14,7 @@ const CartItem = ({ci}) => {
             return;
         }
         ci.quantity = Number(quantity);
-        const resp = await fetch('/api/carts',{method:'PATCH',body:JSON.stringify(ci),headers:{"Content-Type":'application/json',"Authorization":`Bearer ${user.token}`}});
+        const resp = await fetch('https://e-commerce-backend-9p74.onrender.com/api/carts',{method:'PATCH',body:JSON.stringify(ci),headers:{"Content-Type":'application/json',"Authorization":`Bearer ${user.token}`}});
         const json = await resp.json()
         if (!resp.ok){
             setError(json.error);

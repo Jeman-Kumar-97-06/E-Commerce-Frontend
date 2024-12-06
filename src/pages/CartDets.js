@@ -7,7 +7,7 @@ const CartDets = () => {
     const {cart_items,dispatch}  = useCartContext();
     useEffect(()=>{
         const fetchCart = async () => {
-            const resp  = await fetch('/api/carts',{headers:{"Authorization":`Bearer ${user.token}`}});
+            const resp  = await fetch('https://e-commerce-backend-9p74.onrender.com/api/carts',{headers:{"Authorization":`Bearer ${user.token}`}});
             const cart  = await resp.json();
             if (resp.ok) {
                 dispatch({type:"SET_CART_ITEMS",payload:cart.resps});

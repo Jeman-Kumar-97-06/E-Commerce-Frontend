@@ -9,7 +9,7 @@ const ProductDetails = ({prod}) => {
         e.preventDefault()
         const pt  = {};
         pt[prod.title] = quantity;
-        const resp = await fetch('/api/carts',{method:"POST",
+        const resp = await fetch('https://e-commerce-backend-9p74.onrender.com/api/carts',{method:"POST",
                                                headers:{"Content-Type":"application/json",'Authorization':`Beared ${user.token}`},
                                                body:JSON.stringify({pt})
                                                })

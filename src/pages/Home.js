@@ -11,7 +11,7 @@ const Home = () => {
 
     useEffect(()=>{    
         const fetchAllProds = async () => {
-            const resp  = await fetch('/api/products',{headers:{"Authorization":`Bearer ${user.token}`}});
+            const resp  = await fetch('https://e-commerce-backend-9p74.onrender.com/api/products',{headers:{"Authorization":`Bearer ${user.token}`}});
             const prods = await resp.json();
             if (resp.ok) {
                 dispatch({type:"SET_PRODS",payload:prods});
@@ -36,7 +36,7 @@ const Home = () => {
     }
 
     const handleFeatured = async () => {
-            const resp  = await fetch('/api/products',{headers:{"Authorization":`Bearer ${user.token}`}});
+            const resp  = await fetch('https://e-commerce-backend-9p74.onrender.com/api/products',{headers:{"Authorization":`Bearer ${user.token}`}});
             const prods = await resp.json();
             if (resp.ok) {
                 dispatch({type:"SET_PRODS",payload:prods});
