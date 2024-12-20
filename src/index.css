@@ -384,7 +384,7 @@ tr{
   margin-left:70px;
 }
 
-@media only screen and (max-width:393px) {
+@media only screen and (max-width:420px) {
   .book_store{
     font-size: x-large;
     font-weight: 200;
@@ -415,7 +415,7 @@ tr{
     margin-right: auto;
   }
   .card{
-    width:180px;
+    width:140px;
     margin-left: 10px;
   }
   .prod_image img{
@@ -446,11 +446,5 @@ tr{
   }
   .all_prods{
     align-items: center;
-  }
-}
-
-@media only screen and (max-width:412px) {
-  .card{
-    width:140px;
   }
 }
