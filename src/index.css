@@ -450,5 +450,6 @@ tr{
   }
   .all_prods{
     align-items: center;
+    justify-content: space-around;
   }
 }
