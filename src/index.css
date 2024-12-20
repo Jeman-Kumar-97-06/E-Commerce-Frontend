@@ -384,6 +384,10 @@ tr{
   margin-left:70px;
 }
 
+.card img{
+  max-width: 100%;
+}
+
 @media only screen and (max-width:420px) {
   .book_store{
     font-size: x-large;
