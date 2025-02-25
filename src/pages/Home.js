@@ -44,7 +44,10 @@ const Home = () => {
     }
 
     return (
-        <div className="home_div">            
+        <div className="home_div">         
+        {/* <div style={{width:'100%'}}>
+            <img style={{width:'100%'}} src='/bookbanner.jpg'/>
+        </div>    */}
             <div className="filter_btns">
                 <div className="dropdown">
                     <button className="dropbtn">Category</button>

@@ -2,6 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Special+Elite&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=UnifrakturCook:wght@700&display=swap');
  */
+ @import "tailwindcss";
  @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&family=UnifrakturCook:wght@700&display=swap');
 body {
   /* background-image: url("../public/istockphoto-1421303925-612x612.jpg"); */
